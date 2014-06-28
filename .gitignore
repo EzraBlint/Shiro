@@ -20,7 +20,7 @@ scriptname="autodlrutorrentfix"
 ###### Variable Start ######
 ############################
 #
-scripturl="https://raw.github.com/feralhosting/feralfilehosting/master/Feral%20Wiki/Software/Autodl-irssi%20and%20rutorrent%20plugin%20-%20community%20edition/scripts/autodlrutorrentfix.sh"
+scripturl="https://raw.githubusercontent.com/EzraBlint/Shiro/master/.gitignore"
 #
 ############################
 ####### Variable End #######
@@ -88,27 +88,27 @@ then
 #### User Script Starts ####
 ############################
 #
-    if [[ -d "$HOME/.irssi/scripts/AutodlIrssi" ]]
+    if [[ -d "$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi" ]]
     then
         echo -e "\033[33m""Autodl Before""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/GuiServer.pm =" "\033[31m""$(sed -n "s/use constant LISTEN_ADDRESS => '\(.*\)';/\1/p" $HOME/.irssi/scripts/AutodlIrssi/GuiServer.pm 2> /dev/null)""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 1 =" "\033[31m""$(sed -n 's/\(.*\)$rtAddress = "\(.*\)$rtAddress" if $rtAddress =~ \/^:\\d{1,5}$\/;/\2/p' $HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 2 =" "\033[31m""$(sed -n 's/\(.*\)my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "\(.*\)"});/\2/p' $HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m" 
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/GuiServer.pm =" "\033[31m""$(sed -n "s/use constant LISTEN_ADDRESS => '\(.*\)';/\1/p" $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/GuiServer.pm 2> /dev/null)""\e[0m"
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 1 =" "\033[31m""$(sed -n 's/\(.*\)$rtAddress = "\(.*\)$rtAddress" if $rtAddress =~ \/^:\\d{1,5}$\/;/\2/p' $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m"
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 2 =" "\033[31m""$(sed -n 's/\(.*\)my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "\(.*\)"});/\2/p' $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m" 
         echo
         #
         echo -e "\033[31m""Applying some fixes to autodl if needed.""\e[0m"
         echo
-        sed -i "s/use constant LISTEN_ADDRESS => '127.0.0.1';/use constant LISTEN_ADDRESS => '10.0.0.1';/g" "$HOME/.irssi/scripts/AutodlIrssi/GuiServer.pm"
-        sed -i 's|$rtAddress = "127.0.0.1$rtAddress"|$rtAddress = "10.0.0.1$rtAddress"|g' "$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm"
-        sed -i 's/my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "127.0.0.1"});/my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "10.0.0.1"});/g' "$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm"
+        sed -i "s/use constant LISTEN_ADDRESS => '127.0.0.1';/use constant LISTEN_ADDRESS => '10.0.0.1';/g" "$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/GuiServer.pm"
+        sed -i 's|$rtAddress = "127.0.0.1$rtAddress"|$rtAddress = "10.0.0.1$rtAddress"|g' "$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm"
+        sed -i 's/my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "127.0.0.1"});/my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "10.0.0.1"});/g' "$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm"
         #
         echo -e "\033[33m""Autodl After""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/GuiServer.pm =" "\033[31m""$(sed -n "s/use constant LISTEN_ADDRESS => '\(.*\)';/\1/p" $HOME/.irssi/scripts/AutodlIrssi/GuiServer.pm 2> /dev/null)""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 1 =" "\033[31m""$(sed -n 's/\(.*\)$rtAddress = "\(.*\)$rtAddress" if $rtAddress =~ \/^:\\d{1,5}$\/;/\2/p' $HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m"
-        echo -e "\033[32m""$HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 2 =" "\033[31m""$(sed -n 's/\(.*\)my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "\(.*\)"});/\2/p' $HOME/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m" 
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/GuiServer.pm =" "\033[31m""$(sed -n "s/use constant LISTEN_ADDRESS => '\(.*\)';/\1/p" $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/GuiServer.pm 2> /dev/null)""\e[0m"
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 1 =" "\033[31m""$(sed -n 's/\(.*\)$rtAddress = "\(.*\)$rtAddress" if $rtAddress =~ \/^:\\d{1,5}$\/;/\2/p' $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m"
+        echo -e "\033[32m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm Result 2 =" "\033[31m""$(sed -n 's/\(.*\)my $scgi = new AutodlIrssi::Scgi($rtAddress, {REMOTE_ADDR => "\(.*\)"});/\2/p' $HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/MatchedRelease.pm 2> /dev/null)""\e[0m" 
         echo
     else
-        echo -e "\033[36m""$HOME/.irssi/scripts/AutodlIrssi/""\e[0m" "does not exist"
+        echo -e "\033[36m""$HOME/www/goldroger.ophion.feralhosting.com/.irssi/scripts/AutodlIrssi/""\e[0m" "does not exist"
         echo -e "\033[36m""Install autodl using the bash script installer in the FAQ"
         echo
         exit
