@@ -4,7 +4,7 @@ scriptversion="1.0.6"
 scriptname="autodlrutorrentfix"
 # randomessence
 #
-# wget -qO ~/autodlrutorrentfix.sh http://git.io/BBUryw && bash ~/autodlrutorrentfix.sh
+# wget -qO ~/autodlrutorrentfix.sh http://goo.gl/Cpq3GC && bash ~/autodlrutorrentfix.sh
 #
 ############################
 ## Version History Starts ##
@@ -20,7 +20,7 @@ scriptname="autodlrutorrentfix"
 ###### Variable Start ######
 ############################
 #
-scripturl="https://raw.githubusercontent.com/EzraBlint/Shiro/master/.gitignore"
+scripturl="https://raw.githubusercontent.com/EzraBlint/Shiro/master/.sh"
 #
 ############################
 ####### Variable End #######
